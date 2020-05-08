@@ -12,9 +12,21 @@ require_once("config.php");
 //$search = Usuario::search("V");
 //echo json_encode($search);
 
+//$usuario = new Usuario();
+//$usuario->login("Andre","112123");
+//echo $usuario;
+
+
+//$aluno = new Usuario("Gisele","minhasenha");
+//$aluno->insert();
+//echo $aluno;
+
 $usuario = new Usuario();
-$usuario->login("Andre","112123");
+$usuario->loadById(8);
+
+$usuario->update("professor", "!@#$");
 
 echo $usuario;
+
 
 ?>
